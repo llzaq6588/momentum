@@ -1,0 +1,158 @@
+@import "reset.css";
+
+.hidden {
+    display: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#middle_box {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+#clock-greeting {
+    position: absolute;
+    top: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#clock {
+    font-size: 100px;
+    margin-bottom: 20px;
+}
+
+#login-form input {
+    width: 230px;
+    height: 30px;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.0);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 5px white solid;
+    color: white;
+    font-weight: bold;
+}
+#login-form input::placeholder {
+    color: white;
+    font-weight: bold;
+}
+
+#login-form button {
+    width: 100px;
+    height: 37px;
+    background-color: rgba(255, 255, 255, 0.0);
+    border: 5px white solid;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+
+#greeting {
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+#todo-box {
+    margin-top: 15px;
+}
+#todo-form input {
+    width: 250px;
+    height: 15px;
+    font-size: 13px;
+    background-color: rgba(255, 255, 255, 0.0);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px white solid;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#todo-form input::placeholder {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+#todo-list {
+    list-style:none;
+    margin-top: 10px;
+}
+#todo-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+#todo-list li button {
+    background-color: rgba(255, 255, 255, 0.0);
+    border: none;
+    font-size: 13px;
+}
+
+
+
+
+
+#bgimg {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    opacity: 75%;
+    position: absolute;
+    z-index: -1;
+}
+
+#quote {
+    position: absolute;
+    z-index: 1;
+    bottom: 20px;
+    width: 90vw;
+    font-size: 11px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#quote span:first-child {
+    margin-bottom: 0px;
+}
+
+
+#weather {
+    position: absolute;
+    z-index: 1;
+    color: white;
+    width: 500px;
+    height: 100px;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    text-align: right;
+    font-weight: bold;
+}
